@@ -1,0 +1,2 @@
+terms,definitions = response.xpath('//dl/dt/a/@id').extract(), response.xpath('//dl/dd/p/text()').extract()
+glossary = {k:v for k, v in zip(terms,definitions)}
